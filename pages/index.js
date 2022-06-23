@@ -65,6 +65,9 @@ export default function HomepageTemplate({
 }
 
 export async function getStaticProps(context) {
+  console.log(process.env);
+
+  
   const origin = process.env.NEXT_PUBLIC_FRONTEND_URL;
   const { locales } = context;
   // if there is more than one language in context.locales,
